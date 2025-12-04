@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Ecobin</title>
+    <link rel="icon" href="favicon.svg" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -15,8 +16,7 @@
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <i class="fas fa-recycle"></i>
-                Eco<span class="highlight">bin</span>
+                <img src="logo.svg" alt="Ecobin Logo" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -42,46 +42,52 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Get In Touch</h2>
-                    <p style="margin-bottom: 40px;">We are here to answer any questions you may have about our waste
+                    <h2 class="section-title-left">Get In Touch</h2>
+                    <p style="margin-bottom: 24px;">We are here to answer any questions you may have about our waste
                         management services. Reach out to us and we'll respond as soon as we can.</p>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Head Office</h4>
-                            <p>101, Hor al Anz Building, Hor AL Anz,<br>Plot No. 305-0, Dubai UAE</p>
-                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=101+Hor+al+Anz+Building+Dubai+UAE"
+                            target="_blank">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Head Office</h4>
+                                <p>101, Hor al Anz Building, Hor AL Anz,<br>Plot No. 305-0, Dubai UAE</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>Mobile: 00971 50 6801 369</p>
-                            <p>Tel: +971 4 [Number]</p>
-                            <p>Fax: +971 4 [Number]</p>
-                        </div>
+                        <a href="tel:+971506801369">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>Mobile: +971 50 6801 369</p>
+
+                            </div>
+                        </a>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>sales@ecobinuae.com</p>
-                        </div>
+                        <a href="mailto:sales@ecobinuae.com">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>sales@ecobinuae.com</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="contact-form-container">
                     <h3 style="margin-bottom: 20px; color: var(--dark-color);">Request a Quote</h3>
-                    <form class="contact-form">
+                    <form id="contactForm" class="contact-form" method="post">
                         <div class="form-group">
                             <label for="service">Service Required</label>
                             <select id="service" name="service">
@@ -120,7 +126,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>Ecobin</h3>
+                    <img src="logo.svg" alt="Ecobin Logo" class="footer-logo">
                     <p>Accredited by Dubai Municipality. Providing sustainable waste management solutions for a cleaner
                         future.</p>
                     <div class="social-links">
@@ -142,14 +148,19 @@
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 101, Hor al Anz Building, Dubai UAE</li>
-                        <li><i class="fas fa-phone"></i> 00971 50 6801 369</li>
-                        <li><i class="fas fa-envelope"></i> sales@ecobinuae.com</li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=101+Hor+al+Anz+Building+Dubai+UAE"
+                                target="_blank"><i class="fas fa-map-marker-alt"></i> 101, Hor al Anz Building, Dubai
+                                UAE</a></li>
+                        <li><a href="tel:+971506801369"><i class="fas fa-phone"></i> +971 50 6801 369</a></li>
+                        <li><a href="mailto:sales@ecobinuae.com"><i class="fas fa-envelope"></i> sales@ecobinuae.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Ecobin Sewage and Draining Services LLC. All rights reserved.</p>
+                <p>&copy; 2025 Ecobin Sewage and Draining Services LLC. All rights reserved. Developed by <a
+                        href="https://faaxy.ae" target="_blank"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">Faaxy.ae</a></p>
             </div>
         </div>
     </footer>
